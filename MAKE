@@ -1,0 +1,7 @@
+CC = gcc
+CFLAGS = -g -lm -std=c99 -w -I src/
+
+SRCS = $(wildcard ./src/*.c)
+
+default:
+    $(CC) $(CFLAGS) $(SRCS) -o test
