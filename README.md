@@ -1,6 +1,6 @@
 # Two-Stage Instuction Decoder
 
-## Goal
+### Goal
 * Simulation for fetching of next instruction cycle, `fetchNextInstruction()`,
 * Simulation of execute instruction cycle, `executeInstruction()`.
 
@@ -17,3 +17,11 @@ The function `fetchNextInstruction()` performs the following steps:
 * Determine from the instruction how much to increment PC so that it points to the next instruction in `memory[]` and perform the increment.
 
 The function `executeInstruction()` examines the IR to determine which operation to perform and it performs this operation on the data contained in the registers and in the array `memory[]`.
+
+### I/O
+
+*`mem_in.txt` is the input to be processed*
+
+*`mem_out.txt` is the verified and correct memory output given `mem_in.txt`*
+
+*`mem_out_result.txt` is the output of the program -- not found in this repository and to be outputted upon execution*
